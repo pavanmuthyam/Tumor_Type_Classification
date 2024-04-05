@@ -23,6 +23,15 @@ The final output is the DataFrame with the selected features, actual diagnosis, 
 
 ![image](https://github.com/pavanmuthyam/Tumor_Type_Classification/assets/87929903/e11ffa27-f1ef-440b-befb-963f505bd5b4)
 
+Data Visualization
+The script sets the style of the plot to "whitegrid" and specifies the figure size. It then uses the sns.countplot() function to create a count plot of the 'diagnosis' column in the DataFrame, with different colors for benign and malignant cases.
+
+Plot Customization
+The plot is titled 'Distribution of Malignant (1) and Benign (0) Cases' to clearly convey the information being presented. The x-axis is labeled 'Diagnosis (0: Benign, 1: Malignant)' and the y-axis is labeled 'Count' to provide context for the data.
+
+Output
+The output of the script is a visual representation of the distribution of cancer diagnoses in the dataset. This plot helps in quickly understanding the balance between benign and malignant cases and can provide insights for further analysis or model development.
+![image](https://github.com/pavanmuthyam/Tumor_Type_Classification/assets/87929903/a0cd8334-1054-4d13-923d-9405cf4bb7bc)
 
 
 
