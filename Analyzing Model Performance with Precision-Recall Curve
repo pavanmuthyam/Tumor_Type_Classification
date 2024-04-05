@@ -1,0 +1,14 @@
+from sklearn.metrics import precision_recall_curve, average_precision_score
+
+# Get precision and recall
+precision, recall, _ = precision_recall_curve(y_test, y_prob)
+avg_precision = average_precision_score(y_test, y_prob)
+
+# Plot Precision-Recall curve
+plt.figure(figsize=(8, 6))
+plt.plot(recall, precision, label=f'Avg Precision = {avg_precision:.2f}')
+plt.xlabel('Recall')
+plt.ylabel('Precision')
+plt.title('Precision-Recall Curve')
+plt.legend()
+plt.show()
