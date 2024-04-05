@@ -1,0 +1,18 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Assuming df is your loaded DataFrame
+plt.figure(figsize=(12, 6))
+
+# Box plot for 'area_worst'
+plt.subplot(1, 2, 1)
+sns.boxplot(x='diagnosis', y='area_worst', data=df, palette='viridis')
+plt.title('Box Plot of area_worst by Diagnosis')
+
+# Box plot for 'area_mean'
+plt.subplot(1, 2, 2)
+sns.boxplot(x='diagnosis', y='area_mean', data=df, palette='viridis')
+plt.title('Box Plot of area_mean by Diagnosis')
+
+plt.tight_layout()
+plt.show()
