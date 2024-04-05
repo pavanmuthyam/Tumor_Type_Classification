@@ -1,0 +1,15 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Assuming df is your loaded DataFrame
+sns.set(style="whitegrid")
+plt.figure(figsize=(10, 6))
+
+# Visualize the distribution of malignant and benign cases
+sns.countplot(x='diagnosis', data=df, palette='viridis')
+
+plt.title('Distribution of Malignant (1) and Benign (0) Cases')
+plt.xlabel('Diagnosis (0: Benign, 1: Malignant)')
+plt.ylabel('Count')
+
+plt.show()
